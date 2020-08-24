@@ -1,0 +1,541 @@
+/*https://michalsnik.github.io/aos/*/
+
+/******** STYLE *******/
+body {
+   width:100%;
+   height:100vh;
+   /*font-family: 'Ovo', serif;*/
+
+   /* font-family: 'Lora', serif; */
+   font-family: 'PT Serif', serif;
+   margin: 0;
+   padding:0;
+   background-color: white;
+   /* to keep footer at bottom of page*/
+}
+
+p {
+/* font-family: 'Source Sans Pro', sans-serif;*/
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;  
+margin-top: 10px;
+margin-bottom: 20px;
+line-height: 2em;
+}
+
+h2{
+ margin-bottom: 70px;
+ font-size: 40px;  
+}
+
+h3{
+  font-size: 38px;
+  font-weight: 100;
+}
+
+h4{
+   font-size: 26px;
+}
+
+h5{
+   font-size: 20px;
+}
+
+h6{
+  font-size: 15px;
+}
+
+/******** BOOTSTRAP ******/
+
+.container-fluid{
+  margin: auto;
+  width: 100% !important;
+  padding-left: 0;
+  padding-right: 0;    
+   /* to keep footer at bottom of page*/
+  position:relative;
+  min-height:100%;
+  padding-bottom:220px; /* Height of the footer element */
+}
+
+.row{
+  margin: auto;
+}
+
+/********  NAVIGATION *******/
+
+.navbar {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+   transition: all 1s ease; 
+   -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+.navbar-border{
+  border-bottom: 2px solid #cccccc;
+}
+
+.white-background{
+  background-color: white;
+}
+
+/* not used? */
+ .bootstrap-magenta{
+  color: rgb(150, 0, 137) !important;
+   /* color: #00529b !important;  */
+} 
+
+ .bootstrap-background-color{
+  color: rgb(150, 0, 137) !important;
+  /* background-color: #00529b !important; */
+} 
+
+.navbar-brand, .navbar-right a{
+  color: white;
+}
+
+#myNavbar a:visited, #myNavbar a:link {
+  background-color: transparent;
+}
+
+#myNavbar a:hover {
+ background-color: transparent;
+ text-decoration: underline;
+}
+
+.navbar-nav .divider a{
+  border-left: solid;
+  border-bottom: none;
+  margin-top: 10px;
+  margin-right: -60px;
+  margin-left: 15px;
+  width: 80px;
+}
+
+.navbar-nav .divider a:hover{
+  text-decoration: none !important;
+}
+
+.active{
+  text-decoration: underline;
+}
+
+.navbar-brand{
+  font-size: 25px;
+}
+
+.icon-bar{
+  background-color: white;
+}
+
+/******** COVER *******/
+
+#cover {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/mountains.jpg);  
+   /* Image is centered vertically and horizontally at all times */
+   background-position: center;
+   /* Image doesn't repeat */
+   background-repeat: no-repeat;
+   /* Makes the image fixed in the viewpoint so that it doesn't move when 
+  the content height is greater than the image height */
+   background-attachment: fixed;
+   /* This is what makes the background image 
+  rescale based on itscontainer's size */
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   overflow: hidden;
+   /* Pick a solid background color that will
+ be displayed while the background image is loading */
+    background-color: white;
+    position:relative;
+   -webkit-animation-duration: 3s;  
+ }
+
+.center{
+  margin: 0;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#cover-name{
+  font-family: 'Arizonia', cursive;    /* added font */
+  font-size: 110px;                    /* as 80 */
+  font-weight:900;
+}
+
+.greetings{
+  font-weight: bold !important;
+}
+
+.overlay{
+  background: rgb(150, 0, 137);
+  /* background: #00529b; */
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  z-index: 1;
+  box-sizing: border-box;
+  transition: all 0.5s ease; 
+  -webkit-animation-delay: 0.5s;     
+}
+
+.arrow .btn{
+  color: white;
+  font-size: 35px;
+  padding: 0;
+  width: 100%;
+}
+
+.arrow:hover .btn{
+   transform: scale(1.20); 
+}
+
+/******** SECTION *******/
+
+.section{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.qontent{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/******** ABOUT ME *******/
+
+
+.hobbies{
+   margin: auto;
+   margin-top: 10px;
+   text-align: center;
+}
+
+.hobby-icon{
+ height: 30px;
+ 
+}
+
+
+.box{
+  padding: 15px;
+  margin-bottom: 40px;
+  border-style: solid;
+  border-color: rgba(51, 122, 183, 0.10);
+  border-width: thin;
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #D3D3D3;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.box h5{
+  font-weight: 500px;
+  border-bottom: 2px solid #0a0a0a
+}
+
+.box p{
+  font-size: 14px;
+}
+
+.color {
+  color: rgb(150, 0, 137);
+  /* color: #00529b; */
+}
+
+.pad {
+  padding-bottom: 40px;
+}
+
+/******** PROJECTS *******/
+
+#projects{
+  background-color:  #f6f6f6;
+}
+
+#projects > h2{
+  margin-bottom: 0;
+}
+
+#projects .subheader{
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-right: 40%;
+  padding-left: 40%;
+}
+
+#projects a{
+    color: black;
+    text-decoration: none;
+}
+
+#projects h4{
+  color: rgb(150, 0, 137);
+  /* color: #00529b; */
+}
+
+#project-list{
+  padding-top: 10px;
+  list-style: none;
+  display: flex !important;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: -webkit-inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-card{
+  width: 320px;
+  height: 530px;                                      /* was 510, 420 */
+  display: block;
+  margin-bottom: 40px;
+  text-align: left;
+  border-style: solid;
+  border-color: rgba(51, 122, 183, 0.10);
+  border-width: thin;
+  border-radius: 5px;
+  box-shadow: 0 12px 12px 0 #D3D3D3;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.card-img{
+  height: 32%;                                 /* was 45, 50% */
+  overflow: hidden;  
+}
+
+.card-img_src{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0; 
+
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+
+.single-card:hover .card-img_src{
+    transform: scale(1.18);  
+}
+
+.zoom-in{
+  transform: scale(1.18); 
+}
+
+.card-info{
+  padding: 15px;   
+  width: 100%;
+  height: 68%;                  /* was 56, 50% */
+}
+
+.card-info > p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  height: 72%;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.single-card:hover .card-name{
+   color: rgb(150, 0, 137);
+   /* color: #00529b; */
+   text-decoration: none;
+}
+
+.magenta-divider{
+  width: 100%;
+  height: 6px;
+  background-color: rgb(150, 0, 137);
+  /* background-color: #00529b; */
+}
+
+.hide{
+  display: none;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+/******** BOOTSRAP FORM CONTROL  *******/
+.form-control{
+  font-size: 16px;
+}
+
+/******** CONTACT  *******/
+
+#contact a:visited{
+  color: rgb(150, 0, 137);
+    /* color: #00529b; */
+}
+
+#contact a:link {
+  color: rgb(150, 0, 137);
+    /* color: #00529b; */
+}
+
+.btn-social-icon{
+  font-size: 40px;
+}
+
+/******** FOOTER *******/
+
+footer {
+  font-size: 16px;
+  width:100%;
+  height:120px;
+  padding-top: 45px;                            /* was 30 */
+  position: absolute;
+  text-align: center;
+  bottom:0;
+  left:0;
+  background-color: rgb(179, 148, 176);
+  /* background-color: #648caf; */
+  color: white;
+}
+
+@media only screen and (max-width: 550px) {
+  #cover-name{
+   font-size: 80px;
+  }
+
+  #projects .subheader{
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) { 
+  #cover{
+    background-attachment: scroll;
+  } 
+
+  .navbar-nav .divider a{
+  border-left: none;
+  border-bottom: solid;
+  margin-top: -10px;
+ }
+}
+
+/* ----------CAROUSEL----------*/
+#myCarousel{
+  margin: auto;
+  position: relative;
+  height: 80vh;
+  width: 80%;
+}
+
+.background{
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: white;
+   background-position: center center;
+   background-color: white !important;
+}
+.carousel-control{
+  background-image: none !important;
+
+}
+
+.first-slide-img{
+  background-image: url(../images/travel/vancouver.jpg);
+}
+
+.second-slide-img{
+  background-image: url(../images/travel/seattle.jpg);
+  background-position: right top;
+}
+
+.third-slide-img{
+  background-image: url(../images/travel/hawaii.jpg);
+}
+
+.fourth-slide-img{
+  background-image: url(../images/travel/miami.jpg);
+}
+
+.fifth-slide-img{
+  background-image: url(../images/travel/london.jpg);
+}
+
+.sixth-slide-img{
+  background-image: url(../images/travel/barcelona.jpg);
+   background-position: center top;
+}
+.seventh-slide-img{
+  background-image: url(../images/travel/morocco.jpg);
+}
+.eight-slide-img{
+  background-image: url(../images/travel/belgium.jpg);
+  background-position: center bottom;
+}
+
+.ninth-slide-img{
+  background-image: url(../images/travel/home.jpg);
+  background-position: center bottom;
+}
+
+.carousel-inner{
+  height: 100%;
+  width: 100%;
+}
+
+.carousel .item {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+
+
+@media only screen and (max-width: 767px) { 
+  .background{
+    background-attachment: scroll;
+  } 
+  #myCarousel{
+    height: 60vh;
+}
+}
