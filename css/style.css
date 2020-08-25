@@ -157,7 +157,8 @@ h6{
  be displayed while the background image is loading */
     background-color: white;
     position:relative;
-   -webkit-animation-duration: 3s;  
+    animation-duration: 3s;                         
+    -webkit-animation-duration: 3s;   
  }
 
 .center{
@@ -207,7 +208,8 @@ h6{
   z-index: 1;
   box-sizing: border-box;
   transition: all 0.5s ease; 
-  -webkit-animation-delay: 0.5s;     
+  animation-delay: 0.5s;                    
+  -webkit-animation-delay: 0.5s;
 }
 
 .arrow .btn{
