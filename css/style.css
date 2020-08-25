@@ -325,7 +325,7 @@ h6{
 
 .single-card{
   width: 320px;
-  height: 530px;                                      /* was 510, 420 */
+  height: 540px;                                      /* was 510, 420 */
   display: block;
   margin-bottom: 40px;
   text-align: left;
