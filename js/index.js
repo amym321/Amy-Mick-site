@@ -1,3 +1,6 @@
+// animate on scroll attributed to github.com/michalsnik/aos
+//and codepen from Maribel Duran
+
 var view = {
   displayProjects(projectType){
     var singleCards = document.getElementsByClassName('single-card');
