@@ -264,44 +264,15 @@ div b {
 }
 
 div b:nth-of-type(2){
-  animation-delay: 0.1s;
+  animation-delay: 0.15s;
   -webkit-animation-delay: 0.1s;
 }
 
 div b:nth-of-type(3){
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
   -webkit-animation-delay: 0.2s;
 }
 
-div b:nth-of-type(4){
-  animation-delay: 0.3s;
-  -webkit-animation-delay: 0.3s;
-}
-
-div b:nth-of-type(5){
-  animation-delay: 0.4s;
-  -webkit-animation-delay: 0.4s;
-}
-
-div b:nth-of-type(6){
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
-}
-
-div b:nth-of-type(7){
-  animation-delay: 0.6s;
-  -webkit-animation-delay: 0.6s;
-}
-
-div b:nth-of-type(8){
-  animation-delay: 0.7s;
-  -webkit-animation-delay: 0.7s;
-}
-
-div b:nth-of-type(9){
-  animation-delay: 0.8s;
-  -webkit-animation-delay: 0.8s;
-}
 
 /* div:hover b {
   animation: reset 1s 1;
@@ -434,7 +405,7 @@ div b:nth-of-type(9){
 
 .single-card{
   width: 420px;                                       /* was 320 */
-  height: 540px;                                      /* was 510, 420 */
+  height: 500px;                                      /* was 510, 420 */
   display: block;
   margin-bottom: 40px;
   text-align: left;
@@ -448,7 +419,7 @@ div b:nth-of-type(9){
 }
 
 .card-img{
-  height: 65%;                                 /* was 32, 45, 50% */
+  height: 67%;                                 /* was 32, 45, 50% */
   overflow: hidden;  
 }
 
@@ -475,7 +446,7 @@ div b:nth-of-type(9){
 .card-info{
   padding: 10px;   
   width: 100%;
-  height: 68%;                  /* was 56, 50% */
+  height: 33%;                  /* was 68, 56, 50% */
 }
 
 .card-info > p{
@@ -495,6 +466,11 @@ div b:nth-of-type(9){
   border: solid rgb(150, 0, 137) 2px;
   padding: 5px;
   font-weight: bold;
+
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* .card-name {
@@ -521,12 +497,22 @@ div b:nth-of-type(9){
   text-decoration-line: underline;
 }
 
+/******** PROJECT POPUP *******/
+
+
+
+
+
 /******** BOOTSRAP FORM CONTROL  *******/
 .form-control{
   font-size: 16px;
 }
 
 /******** CONTACT  *******/
+
+#contact {
+    padding-bottom: 80px;
+}
 
 #contact a:visited{
   color: rgb(150, 0, 137);
@@ -539,9 +525,6 @@ div b:nth-of-type(9){
 .btn-social-icon{
   font-size: 40px;
 }
-
-/******** PROJECT POPUP *******/
-
 
 
 
