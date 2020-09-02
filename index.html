@@ -27,6 +27,7 @@
 </head>
 
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
   <div id="cover" class="animated fadeIn">
     <div class="overlay">
     </div>
@@ -73,90 +74,6 @@
   </nav>
 
 
-  <!-- ABOUT ME section -->
-  <div id="about" class="section">
-    <h2 class="text-center">ABOUT ME</h2>
-    <div class= "section-content">
-      <div class=" row">
-        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-          <img  class="img-responsive center-block" src="images/aboutMe/Amy3.jpg" alt="image of Amy"/><br>
-        </div>   
-          
-          
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <h4>Where I'm Going</h4>
-        <p>I'm a fullstack developer. I'm passionate about turning complex problems 
-          into simple, beautiful and intuitive designs and applications.
-          I enjoy solving digital marketing issues and I hope to contribute to small 
-          businesses in need of a strong digital presence.
-          </p>
-          <!-- <p>I like to resolve design problems, create smart user interions. 
-            I have built projects utilizing 
-          React,PostgreSQL, Express,  Redux, Node.js, Heroku, Bootstrap,
-          HTML, CSS, JavaScript, Git & Github.
-          </p> -->
-        <h4>Where I'm Coming From</h4>
-        <p>I managed a business with numerous suppliers, employees, and products. 
-          So, I have an understanding for the digital marketing concerns of businesses as well 
-          as their own time contraints.
-          My tech roots in software development and implementation as a consultant with Accenture and A.T. Kearney
-          have given me an appreciation for collaboration while seeking out solutions to meet clients' expectations 
-          and needs. Lastly, I have a degree in Industrial Engineering & Sytems and an M.B.A. from U. Chicago Booth.</p>
-        <!-- <h4>Who I Am</h4> -->
-      </div>
-        
-
-
-      <div class="col-xs-12 col-md-4">
-        <h4 >Who I Am</h4>
-        <p>
-          When I'm not seeking out new coding projects you can find me zipping down the road on my motorcycle,  
-          travelling, kayaking, reading, or hanging out with friends.
-        </p>
-        <a href="" target="_blank" ><h4 class="colorize">Resume  <span class="iconify" data-icon="carbon:document" data-inline="false"></span></h4></a>
-      </div>
-
-      <div class="col-xs-6 col-xs-offset-3  col-md-2 col-md-offset-0">
-        <img class="img-responsive " src="images/aboutMe/motorcycle.JPG" alt="image of motorcycle"/><br><br>  
-      </div>
-<!-- 
-      <div class="col-xs-12   col-lg-4 col-xl-4">
-        <h4 class="text-center">Tech</h4>
-        <p>
-          Languages, frameworks and libraries that I utilize:  React, PostgreSQL, Node.js, JavaScript, Bootstrap,  
-          Express, Redux, Heroku, HTML, CSS, Git & Github.  
-        </p>
-      </div> -->
-
-      <div class="row pad">
-        <div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1">
-          <h4 class="text-center">Tech</h4>
-          <p class="text-center" >Languages, frameworks, and libraries that I utilize:  React, PostgreSQL, Node.js, 
-            JavaScript, Bootstrap, Express, Redux, Heroku, HTML, CSS, Git & Github.
-          </p>
-          <div class="row">
-            <div class="color text-center">
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="cib:react" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="simple-icons:postgresql" data-inline="false"></div>                
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="fa-brands:node" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="ion:git-branch" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="bi:bootstrap" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="cib:git" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="simple-icons:heroku" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="simple-icons:redux" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="cib:javascript" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="whh:html" data-inline="false"></div>
-              <div class="iconify col-sm-1 btn-social-icon" data-icon="el:css" data-inline="false"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-      
-  </div><!-- end about section -->
-
-
   <!-- PROJECTS section -->
   <div id="projects" class="section">
     <h2 class="text-center">PROJECTS</h2>
@@ -196,10 +113,16 @@
               Javascript, Booststrap, HTML, CSS
             </p> -->
             <h6 >Javascript, Booststrap, HTML, CSS</h6><br>
-            <a class="text-center" href="https://github.com/amym321/book-club-infinite-scroll">
+            <!-- <a class="text-center" href="https://github.com/amym321/book-club-infinite-scroll">
               <H6 class="colorize button text-center">LEARN MORE</H6>
-            </a>
-            <!-- <a class="text-center" href="popup1"><H6 class="colorize button text-center">LEARN MORE</H6></a> -->
+            </a> -->
+            <!-- <div class="buttonBox">
+              <a class="button popup" href="#popup1"><h6 class="colorize  text-center">LEARN MORE</h6></a>
+            </div> -->
+
+            <!-- <div class="buttonBox"> -->
+              <h6 class="buttonText"><a class="button colorize text-center" href="#popup1">LEARN MORE</a></h6>
+            <!-- </div> -->
 
             <!-- <h6><a href="https://github.com/amym321/book-club-infinite-scroll" target="_blank">VIEW SITE</a>
             <a href="https://github.com/amym321/book-club-infinite-scroll" target="_blank">SOURCE CODE</a></h6>   -->
@@ -213,11 +136,33 @@
           </div>
         </div>
 
-
-
  <!-- ******* popup ****** -->
- 
 
+<div id="popup1" class="overlay2">
+	<div class="popup">
+		<h4 class="text-center">Book Club Infinite Scroll</h4>
+		<a class="close" href="#projects">&times;</a>
+		<div class="content">
+      <img class=" center-block" src="images/projects/BookClub3.jpg" alt="Project Image"><br>
+      <div class="text-center">
+        <h6><a class="button buttonMargin colorize" href="https://github.com/amym321/book-club-infinite-scroll" target="_blank">VIEW SITE</a>
+          <a class="button colorize" href="https://github.com/amym321/book-club-infinite-scroll" target="_blank">
+            SOURCE CODE</a>
+        </h6>
+      </div>
+      <p><span class="underline">Challenge</span> - the Junior League of Chicago needed a responsive 
+        site to provide its members with Book Club meeting information.<br>
+        <span class="underline">Solution</span> - with its eye-catching images of past books put 
+        into an infinate scroll, members can get meeting details including map and menu.<br>
+        <span class="underline">Result</span> - a beautiful site relaying club information 
+        as well as actual past books to its members.<br>
+        <span class="underline">Next</span> - add next tech or marketing steps
+      </p>
+		</div>
+	</div>
+</div>
+
+<!-- *******end popup ****** -->
 
  
 
@@ -233,7 +178,7 @@
           <div class="card-info">
             <h4 class="card-name text-center">Lebowski Cast Search</h4>
             <h6 class="text-center">React, Javascript, HTML, tachyons for styling</h6><br>
-            <a class="text-center" href="https://github.com/amym321/Lebowski_Cast"><H6 class="colorize button text-center">LEARN MORE</H6></a>
+            <a class="text-center" href="https://github.com/amym321/Lebowski_Cast"><h6 class="colorize button text-center">LEARN MORE</h6></a>
             <!-- <a class="text-center" href="popup2"><H6 class="colorize button text-center">LEARN MORE</H6></a> -->
 
             <!-- <p><span class="underline">Challenge</span> - create a game for my young nephews that will also 
@@ -267,7 +212,7 @@
           <div class="card-info">
             <h4 class="card-name text-center">Skokie Material Co.</h4>
             <h6 class="text-center">HTML, CSS</h6><br>
-            <a class="text-center" href="https://github.com/amym321/skokie-valley"><H6 class="colorize button text-center">LEARN MORE</H6></a>
+            <a class="text-center" href="https://github.com/amym321/skokie-valley"><h6 class="colorize button text-center">LEARN MORE</h6></a>
             <!-- <a class="text-center" href="popup3"><H6 class="colorize button text-center">LEARN MORE</H6></a> -->
 
             <!-- <p><span class="underline">Challenge</span> - a building material supplier needed a reworked 
@@ -300,7 +245,7 @@
           <div class="card-info">
             <h4 class="card-name text-center">Face Finder App</h4>
             <h6 class="text-center">React, PostgreSQL, Express, Node.js</h6><br>
-            <a class="text-center" href="https://github.com/amym321/Lebowski_Cast"><H6 class="colorize button text-center">LEARN MORE</H6></a>
+            <a class="text-center" href="https://github.com/amym321/Lebowski_Cast"><h6 class="colorize button text-center">LEARN MORE</h6></a>
             <!-- <a class="text-center" href="popup4"><H6 class="colorize button text-center">LEARN MORE</H6></a> -->
 
             <!-- <p><span class="underline">Challenge</span> - create an app utilizing an image recognition API, allow users to register 
@@ -337,7 +282,7 @@
           <div class="card-info">
             <h4 class="card-name text-center">Amy Mick Designs</h4>
             <h6 class="text-center">HTML, CSS, Bootstrap</h6><br>
-            <a class="text-center" href="https://github.com/amym321/Amy-Mick-site"><H6 class="colorize button text-center">LEARN MORE</H6></a>
+            <a class="text-center" href="https://github.com/amym321/Amy-Mick-site"><h6 class="colorize button text-center">LEARN MORE</h6></a>
             <!-- <a class="text-center" href="popup5"><H6 class="colorize button text-center">LEARN MORE</H6></a> -->
 
             <!-- <p>
@@ -363,6 +308,99 @@
   <!-- <div>
     <img id="slide" class="" src="images/projects/project1.png" alt="Project Image">
   </div> -->
+
+
+
+  <!-- ABOUT ME section -->
+  <div id="about" class="section">
+    <h2 class="text-center">ABOUT ME</h2>
+    <div class= "section-content">
+      <div class=" row">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+          <img  class="img-responsive center-block" src="images/aboutMe/Amy3.jpg" alt="image of Amy"/><br>
+        </div>   
+          
+          
+      <div class="col-xs-12 col-sm-5 col-md-5">
+        <h4>Where I'm Going</h4>
+        <p>I'm a fullstack developer. I'm passionate about turning complex problems 
+          into simple, beautiful and intuitive designs and applications.
+          I enjoy solving digital marketing issues and I hope to contribute to small 
+          businesses in need of a strong digital presence.
+          </p>
+          <!-- <p>I like to resolve design problems, create smart user interions. 
+            I have built projects utilizing 
+          React,PostgreSQL, Express,  Redux, Node.js, Heroku, Bootstrap,
+          HTML, CSS, JavaScript, Git & Github.
+          </p> -->
+        <h4>Where I'm Coming From</h4>
+        <p>I managed a business with numerous suppliers, employees, and products. 
+          So, I have an understanding for the digital marketing concerns of businesses as well 
+          as their own time contraints.
+          My tech roots in software development and implementation as a consultant with Accenture and A.T. Kearney
+          have given me an appreciation for collaboration while seeking out solutions to meet clients' expectations 
+          and needs. Lastly, I have a degree in Industrial Engineering & Sytems and an M.B.A. from U. Chicago Booth.</p>
+        <!-- <h4>Who I Am</h4> -->
+      </div>
+        
+
+
+      <div class="col-xs-12 col-md-3">
+        <h4 >Who I Am</h4>
+        <p>
+          When I'm not seeking out new coding projects you can find me zipping down the road on my motorcycle,  
+          travelling, kayaking, reading, or hanging out with friends.
+        </p>
+        <a href="" target="_blank" ><h4 class="colorize">Resume  <span class="iconify" data-icon="carbon:document" data-inline="false"></span></h4></a>
+      </div>
+
+      <div class="col-xs-6 col-xs-offset-3  col-md-2 col-md-offset-0">
+        <img class="img-responsive " src="images/aboutMe/motorcycle.JPG" alt="image of motorcycle"/><br><br>  
+      </div>
+<!-- 
+      <div class="col-xs-12   col-lg-4 col-xl-4">
+        <h4 class="text-center">Tech</h4>
+        <p>
+          Languages, frameworks and libraries that I utilize:  React, PostgreSQL, Node.js, JavaScript, Bootstrap,  
+          Express, Redux, Heroku, HTML, CSS, Git & Github.  
+        </p>
+      </div> -->
+
+      <div class="row pad">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+          <h4 class="text-center">Tech</h4>
+          <p class="text-center" >Languages, frameworks, and libraries that I utilize:  React, PostgreSQL, Node.js, 
+            JavaScript, Bootstrap, Express, Redux, Heroku, HTML, CSS, Git & Github.
+          </p>
+          <div class="row">
+            <div class="color text-center">
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="cib:react" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="simple-icons:postgresql" data-inline="false"></div>                
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="fa-brands:node" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="ion:git-branch" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="bi:bootstrap" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="cib:git" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="simple-icons:heroku" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="simple-icons:redux" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="cib:javascript" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="whh:html" data-inline="false"></div>
+              <div class="iconify col-sm-1 btn-social-icon" data-icon="el:css" data-inline="false"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+  </div><!-- end about section -->
+
+  <!-- TRIANGLE -->
+
+    <!-- <div class="content">
+  </div -->
+    <div class="wrapper">
+      <div class="triangle-down"><div></div></div>
+  </div> 
 
 
 
@@ -396,6 +434,7 @@
 
         </a>
       </div> 
+      
     </div> 
   </div><!-- end contact section -->
 

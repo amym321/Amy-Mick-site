@@ -9,7 +9,7 @@
 } */
 
 
-#slide {
+#slide {                                        /***** NOT USED ****/
   position: absolute;
   left: -100px;
   /* width: 100px;
@@ -46,7 +46,7 @@ body {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-size: 16px;                             /* was 15px */
   margin-top: 10px;
   margin-bottom: 20px;
@@ -72,7 +72,7 @@ h5{
 }
 
 h6{
-  font-size: 16px;
+  font-size: 16px;  
 }
 
 .colorize:hover {
@@ -138,6 +138,10 @@ h6{
  background-color: transparent;
  text-decoration: underline;
 }
+
+/* .navbar:hover {
+  color: white;
+} */
 
 .navbar-nav .divider a{
   border-left: solid;
@@ -336,7 +340,7 @@ div b:nth-of-type(3){
   color: black;
 }
 
-.box{
+.box{                                              /*** NO BOX CLASS USED  ***/
   padding: 15px;
   margin-bottom: 40px;
   border-style: solid;
@@ -348,12 +352,12 @@ div b:nth-of-type(3){
   background-color: white;
 }
 
-.box h5{
+.box h5{                                     /*** NO BOX CLASS USED  ***/
   font-weight: 500px;
   border-bottom: 2px solid #0a0a0a
 }
 
-.box p{
+.box p{                                     /*** NO BOX CLASS USED  ***/
   font-size: 16px;                                /* was 15px */
 }
 
@@ -368,7 +372,7 @@ div b:nth-of-type(3){
 /******** PROJECTS *******/
 
 #projects{
-  background-color:  #f6f6f6;
+  background-color:  #f6f6f6;                 /***Background color */
 }
 
 #projects > h2{
@@ -458,21 +462,6 @@ div b:nth-of-type(3){
   position: relative;
 }
 
-.button {
-  box-sizing: border-box;
-  width: fit-content;
-  text-align: center;
-  /* width: 100%; */
-  border: solid rgb(150, 0, 137) 2px;
-  padding: 5px;
-  font-weight: bold;
-
-  position: relative;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 /* .card-name {
   font-weight: bold;
 } */
@@ -499,8 +488,124 @@ div b:nth-of-type(3){
 
 /******** PROJECT POPUP *******/
 
+/* .buttonBox {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+} */
 
+.button {
+  border-radius: 20px/50px;
+  /* text-decoration: none; */
+  cursor: pointer;
+  /* transition: all 0.3s ease-out; */
 
+/**** my stuff ****/
+  box-sizing: border-box;
+  width: fit-content;
+  text-align: center;
+  border: solid rgb(150, 0, 137) 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(150, 0, 137);
+  /* position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
+.button:hover {
+  background: rgb(150, 0, 137);
+  color: white;
+}
+
+.buttonText {
+  color: rgb(150, 0, 137);
+}
+
+.buttonText:hover {
+  color: white;
+}
+
+.overlay2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width:550px;
+  height: 650px;
+  /* width: 30%;                  */
+  position: relative;
+
+}
+
+.popup h4 {
+  margin-top: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  /* color: #333; */
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  /* transition: all 200ms; */
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(150, 0, 137);
+}
+
+.popup .close:hover {
+  color: rgb(150, 0, 137);
+}
+
+.popup .content {
+  /* max-height: 30%; */
+  overflow: auto;
+}
+
+.buttonMargin {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 90%;
+  }
+  .popup{
+    width: 90%;
+  }
+}
+
+.content img {
+  width: 350px;                           
+  height: 250px;
+}
 
 
 /******** BOOTSRAP FORM CONTROL  *******/
@@ -511,21 +616,90 @@ div b:nth-of-type(3){
 /******** CONTACT  *******/
 
 #contact {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+    background-color: rgb(150, 0, 137);
+    color: white;
 }
 
 #contact a:visited{
-  color: rgb(150, 0, 137);
+  color: white;
 }
 
 #contact a:link {
-  color: rgb(150, 0, 137);
+  color: white;
 }
 
 .btn-social-icon{
   font-size: 40px;
 }
 
+
+
+/*********  TRIANGLE *********/
+
+
+/* .content {
+  background: rgb(150, 0, 137);
+  color: rgb(150, 0, 137);
+  padding-top: 10px;
+  text-align: center;
+  height: 100px;
+} */
+
+.triangle-down{
+    box-sizing: content-box;
+    width: 50%; 
+    height: 0;
+    padding-left:50%;
+    padding-top: 10%;
+    overflow: hidden;
+}
+.triangle-down div {
+    width: 0;
+    height: 0;
+    margin-left:-1000px; 
+    margin-top:-100px; 
+    border-left: 1000px solid rgb(150, 0, 137); 
+    border-right: 1000px solid rgb(150, 0, 137); 
+    border-top: 100px solid white; 
+}
+
+
+
+
+
+
+/* .mk-page-section-wrapper {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+
+.mk-shape-divider--stick-top {
+  top: 0;
+}
+
+.mk-shape-divider {
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+
+#mk-notification-bar, #mk-page-introduce, #mk-theme-container, .master-holder div, .mk-blog-classic-item, .mk-blog-grid-item, .mk-employee-item, .mk-fullwidth-boxed, .mk-gallery .gallery-caption, .mk-gallery .gallery-inner, .mk-gallery .gallery-title, .mk-header-toolbar, .mk-image-caption, .mk-news-item, .page-section-content, .portfolio-widget-info, .shopping-cart-header, .testimonial-column .testimonial-item, .text-input, .theme-page-wrapper, :after, :before, [class*=mk-col-], input[type=text], textarea {
+  box-sizing: border-box;
+}
+
+#mk-notification-bar, #mk-page-introduce, #mk-theme-container, .master-holder div, .mk-blog-classic-item, .mk-blog-grid-item, .mk-employee-item, .mk-fullwidth-boxed, .mk-gallery .gallery-caption, .mk-gallery .gallery-inner, .mk-gallery .gallery-title, .mk-header-toolbar, .mk-image-caption, .mk-news-item, .page-section-content, .portfolio-widget-info, .shopping-cart-header, .testimonial-column .testimonial-item, .text-input, .theme-page-wrapper, :after, :before, [class*=mk-col-], input[type=text], textarea {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: rgb(150, 0, 137);
+  color: #fff;
+} */
 
 
 
@@ -535,12 +709,12 @@ footer {
   font-size: 16px;
   width:100%;
   height:120px;
-  padding-top: 45px;                       /* was 30 */
+  padding-top: 20px;                       /* was 30 */
   /* position: absolute; */                /* this pops the footer up when if the container-fluid div is removed */
   text-align: center;
   bottom:0;
   left:0;
-  background-color: rgb(179, 148, 176);
+  background-color: rgb(150, 0, 137);   /* rgb(179, 148, 176);  */
   color: white;
 }
 
@@ -567,7 +741,7 @@ footer {
  }
 }
 
-/* ----------CAROUSEL----------*/
+/* ----------CAROUSEL----------*/       /*****  NO CAROUEL  ****/
 #myCarousel{
   margin: auto;
   position: relative;
@@ -575,8 +749,8 @@ footer {
   width: 80%;
 }
 
-.background{
-  background-repeat: no-repeat;
+.background{                             /*****  NO CAROUEL  ****/
+  background-repeat: no-repeat; 
   /*background-attachment: fixed;*/
   background-size: auto;
   -webkit-background-size: cover;
