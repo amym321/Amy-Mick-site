@@ -1,5 +1,3 @@
-/*https://michalsnik.github.io/aos/*/
-
 
 /* ******testing code*******  */
 
@@ -108,6 +106,9 @@ h6{
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
+
+  /* position: relative;
+  z-index: -1; */
 }
 
 .navbar-border{
@@ -118,7 +119,7 @@ h6{
   background-color: white;
 }
 
- .bootstrap-magenta{
+ .bootstrap-magenta {
   color: rgb(150, 0, 137) !important;
 } 
 
@@ -139,9 +140,9 @@ h6{
  text-decoration: underline;
 }
 
-/* .navbar:hover {
+.navbar:hover {           /*  had this commented out for some reason */
   color: white;
-} */
+}
 
 .navbar-nav .divider a{
   border-left: solid;
@@ -316,7 +317,10 @@ div b:nth-of-type(3){
 }
 
 
-
+.z-index {
+  position: relative;
+  z-index: -1;
+}
 
 /******** SECTION *******/
 
@@ -338,6 +342,9 @@ div b:nth-of-type(3){
 
 #about h4 {
   color: black;
+
+  position: relative;
+  z-index: -1;
 }
 
 .box{                                              /*** NO BOX CLASS USED  ***/
@@ -501,8 +508,9 @@ div b:nth-of-type(3){
 
 .button {
   border-radius: 20px/50px;
-  /* text-decoration: none; */
   cursor: pointer;
+  
+  /* text-decoration: none; */
   /* transition: all 0.3s ease-out; */
 
 /**** my stuff ****/
@@ -559,6 +567,7 @@ div b:nth-of-type(3){
   /* width: 30%;                  */
   position: relative;
 
+  z-index: 2;
 }
 
 .popup h4 {
@@ -628,6 +637,7 @@ div b:nth-of-type(3){
     padding-bottom: 40px;
     background-color: rgb(150, 0, 137);
     color: white;
+    /* border-top: rgb(150, 0, 137); */
 }
 
 #contact a:visited{
@@ -660,6 +670,8 @@ div b:nth-of-type(3){
     padding-left:50%;
     padding-top: 10%;
     overflow: hidden;
+    
+    /* border-bottom: rgb(150, 0, 137); */
 }
 .triangle-down div {
     width: 0;
@@ -669,6 +681,7 @@ div b:nth-of-type(3){
     border-left: 1000px solid rgb(150, 0, 137); 
     border-right: 1000px solid rgb(150, 0, 137); 
     border-top: 100px solid white; 
+    /* border-bottom: rgb(150, 0, 137); */
 }
 
 
