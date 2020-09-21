@@ -518,7 +518,8 @@ div b:nth-of-type(3){
   width: fit-content;
   text-align: center;
   border: solid rgb(150, 0, 137) 2px;
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   font-weight: bold;
   color: rgb(150, 0, 137);
   /* position: relative;
@@ -563,7 +564,7 @@ div b:nth-of-type(3){
   background: #fff;
   border-radius: 5px;
   width:550px;
-  height: 650px;
+  height: 550px;
   /* width: 30%;                  */
   position: relative;
 
@@ -599,7 +600,10 @@ div b:nth-of-type(3){
 }
 
 .popup img {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
+  /* width: 75%; */
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .buttonMargin {
@@ -607,7 +611,7 @@ div b:nth-of-type(3){
 }
 
 .buttonBottom {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 
