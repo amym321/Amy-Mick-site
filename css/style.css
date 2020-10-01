@@ -419,6 +419,8 @@ div b:nth-of-type(3){
   height: 500px;                                      /* was 510, 420 */
   display: block;
   margin-bottom: 40px;
+  margin-left: 12px;
+  margin-right: 12px;
   text-align: left;
   border-style: solid;
   border-color: rgba(51, 122, 183, 0.10);
@@ -506,14 +508,13 @@ div b:nth-of-type(3){
   text-align: center;
 } */
 
+
 .button {
   border-radius: 20px/50px;
-  cursor: pointer;
-  
+  cursor: pointer;  
   /* text-decoration: none; */
   /* transition: all 0.3s ease-out; */
 
-/**** my stuff ****/
   box-sizing: border-box;
   width: fit-content;
   text-align: center;
@@ -567,9 +568,15 @@ div b:nth-of-type(3){
   height: 550px;
   /* width: 30%;                  */
   position: relative;
-
-  z-index: 2;
+  z-index: 100;  
+  /* tranform and transform-style do not correct the Z-index issue that aos.style creates */
+  /* transform-style: preserve-3d;
+  transform: translate3d(); */
 }
+  /* aos-fix does not correct the Z-index issue that aos.style creates */
+/* .aos-fix[data-aos][data-aos].aos-animate {
+  transform: unset;
+} */
 
 .popup h4 {
   margin-top: 0;
