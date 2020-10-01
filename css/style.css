@@ -95,7 +95,7 @@ h6{
 } 
 
  .bootstrap-background-color{
-  color: rgb(150, 0, 137) !important;
+  background-color: rgb(150, 0, 137)  !important;
 } 
 
 .navbar-brand, .navbar-right a{
@@ -529,8 +529,8 @@ div b:nth-of-type(3){
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width:520px;
-  height: 700px;
+  /* width:520px;
+  height: 700px; */
   /* width: 30%;                  */
   position: relative;
   z-index: 100;  
@@ -542,6 +542,36 @@ div b:nth-of-type(3){
 /* .aos-fix[data-aos][data-aos].aos-animate {
   transform: unset;
 } */
+
+.popup1 {
+  width:520px;
+  height: 570px;
+}
+
+.popup2 {
+  width:520px;
+  height: 600px;
+}
+
+.popup3 {
+  width:520px;
+  height: 630px;
+}
+
+.popup4 {
+  width:520px;
+  height: 700px;
+}
+
+.popup5 {
+  width:520px;
+  height: 550px;
+}
+
+.popup6 {
+  width:520px;
+  height: 460px;
+}
 
 .popup h4 {
   margin-top: 0;
