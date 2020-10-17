@@ -573,6 +573,11 @@ div b:nth-of-type(3){
   height: 580px;
 }
 
+.popup8 {
+  width:520px;
+  height: 600px;
+}
+
 .popup h4 {
   margin-top: 0;
   padding-right: 20px;
