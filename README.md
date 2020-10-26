@@ -1,4 +1,4 @@
-# Amy Mick Portfolio
+# Amy Mick's Portfolio
 
 This is my portfolio website. It also has a link to a responsive resume.
 
