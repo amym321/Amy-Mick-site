@@ -543,14 +543,19 @@ div b:nth-of-type(3){
   transform: unset;
 } */
 
-.popup1, .popup2 {
+.popup1 {
   width:520px;
-  height: 560px;
+  height: 580px;
+}
+
+.popup2 {
+  width:520px;
+  height: 600px;
 }
 
 .popup3 {
   width:520px;
-  height: 630px;
+  height: 590px;
 }
 
 .popup4 {
@@ -607,7 +612,7 @@ div b:nth-of-type(3){
 }
 
 .popup img {
-  margin-bottom: 17px;
+  margin-bottom: 25px;
   /* width: 75%; */
   padding-left: 8%;
   padding-right: 8%;
