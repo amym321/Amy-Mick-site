@@ -391,7 +391,8 @@ div b:nth-of-type(3){
   border-color: rgba(51, 122, 183, 0.10);
   border-width: thin;
   border-radius: 5px;
-  box-shadow: 0 12px 12px 0 #D3D3D3;
+  /* box-shadow: 0 12px 12px 0 #D3D3D3; */
+  box-shadow: 0 12px 12px 0 #d4c4d3;
   box-sizing: border-box;
   background-color: white;
 }
