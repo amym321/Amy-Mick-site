@@ -1,5 +1,9 @@
 // animate on scroll attributed to github.com/michalsnik/aos
-// navbar collapse and project card reduction codepens from M. Duran
+// navbar collapse and project card bootstrap codepens from M. Duran
+
+$(window).load(function(){
+	$('.loader').fadeOut();
+});
 
 var view = {
   displayProjects(projectType){
