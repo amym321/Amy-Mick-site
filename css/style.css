@@ -247,7 +247,7 @@ div b {
   opacity: 0.0;
   animation: port 3s 1 forwards;
   -webkit-animation: port 3s 1 forwards;
-  animation-delay: 0.7s;  /* remove this if there's more than one line. see delays below */
+  animation-delay: 1.2s;  /* remove this if there's more than one line. see delays below */
 }
 
 div b:nth-of-type(2){
